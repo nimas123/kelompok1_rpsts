@@ -1,4 +1,4 @@
-# Aplikasi Pergantian Cuaca
+# Aplikasi Perubahan Cuaca
 Project perubahan cuaca ini bertujuan untuk menciptakan simulasi visual yang menggambarkan perubahan cuaca menggunakan aplikasi Visual Studio Code untuk mengembangkan HTML, CSS, dan JavaScript, serta MediBang Paint untuk mendesain elemen grafis.
 
 # Kelompok 1
