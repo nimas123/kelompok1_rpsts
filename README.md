@@ -1,7 +1,7 @@
 # Aplikasi Pergantian Cuaca
 Aplikasi animasi ini blabalsha...
 
-# Kelompok 3
+# Kelompok 1
 
 | Nama Anggota | Kelas/Semester | Dosen Pengampu |
 |----------|----------|----------|
