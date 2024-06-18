@@ -9,7 +9,7 @@ const matahari = document.getElementById('matahari');
 
 const states = [
     {
-        greeting: '',
+        greeting: 'Selamat Pagi',
         carSrc: 'assets/car.png',
         backgroundColor: 'linear-gradient(to bottom, #87CEEB, #FFFFFF)',
         carMessage: '',
@@ -21,7 +21,7 @@ const states = [
         showMatahari: true
     },
     {
-        greeting: '',
+        greeting: 'Selamat Siang',
         carSrc: 'assets/car.png',
         backgroundColor: 'linear-gradient(to bottom, #4682B4, #FFFFFF)',
         carMessage: '',
@@ -33,7 +33,7 @@ const states = [
         showMatahari: true
     },
     {
-        greeting: '',
+        greeting: 'Selamat malam',
         carSrc: 'assets/car.png',
         backgroundColor: 'linear-gradient(to bottom, #000000, #FFFFFF)',
         carMessage: '',
