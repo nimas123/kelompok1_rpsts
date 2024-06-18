@@ -51,6 +51,7 @@ let currentStateIndex = 0;
 function updateState() {
     const state = states[currentStateIndex];
     greeting.innerText = state.greeting;
+    greeting.stle.color = state.greetingcolor;
     carImage.src = state.carSrc;
     carMessage.innerText = state.carMessage;
     document.querySelector(".container").style.background = state.backgroundColor;
