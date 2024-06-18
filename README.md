@@ -2,7 +2,6 @@
 Aplikasi animasi ini blabalsha...
 
 # Kelompok 3
- # Example Table in README.md
 
 | Nama Anggota       |Umi hanik 22104410021                 | 
 |--------------------|Afiana septi laili 22104410032        |
