@@ -12,13 +12,4 @@ Project perubahan cuaca ini bertujuan untuk menciptakan simulasi visual yang men
 
 # Preview
 
-# My Project
-
-## Introduction
-
-This project is awesome. Watch the video below to learn more.
-
-### Video from Google Drive
-
 <iframe src="https://drive.google.com/file/d/14IGAppiyYHBzeQi_RmoQwoWCPo1rmsbL/preview" width="640" height="480" allow="autoplay"></iframe>
-
