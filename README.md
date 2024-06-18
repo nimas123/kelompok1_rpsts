@@ -11,3 +11,4 @@ Project perubahan cuaca ini bertujuan untuk menciptakan simulasi visual yang men
 | Nimas ayu anggun karisma 22104410051 | TI A/4 | ---------- |
 
 # Preview
+<iframe src="https://drive.google.com/file/d/14IGAppiyYHBzeQi_RmoQwoWCPo1rmsbL/preview" width="640" height="480" allow="autoplay"></iframe>
