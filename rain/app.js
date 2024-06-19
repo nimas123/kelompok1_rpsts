@@ -56,22 +56,15 @@ function updateState() {
     carMessage.innerText = state.carMessage;
     document.querySelector(".container").style.background = state.backgroundColor;
     gunung1Image.src = state.gunungSrc;
-
-    // Remove old class
     gunung1Image.classList.remove('gunung2');
     
-    // Add new class if any
     if (state.gunungClass) {
         gunung1Image.classList.add(state.gunungClass);
     }
 
-    // Show or hide gurun
     gurunImage.style.display = state.showGurun ? 'block' : 'none';
-
-    // Show or hide matahari
     matahari.style.display = state.showMatahari ? 'block' : 'none';
 
-    // Show or hide snowflakes
     if (state.showSnow) {
         createSnowflakes();
         snowflakes.style.display = 'block';
@@ -79,12 +72,10 @@ function updateState() {
         snowflakes.style.display = 'none';
     }
 
-    // Play car engine sound
     carEngineSound.play();
 
     currentStateIndex = (currentStateIndex + 1) % states.length;
 
-    // Set interval for next state change
     setTimeout(updateState, state.duration);
 }
 
@@ -101,7 +92,6 @@ function createSnowflakes() {
     }
 }
 
-// Play car engine sound when animation starts
 carImage.addEventListener('animationstart', () => {
     carEngineSound.play();
 });
