@@ -6,7 +6,6 @@ const gunung1Image = document.getElementById('gunung1Image');
 const gurunImage = document.getElementById('gurunImage');
 const snowflakes = document.getElementById('snowflakes');
 const matahari = document.getElementById('matahari');
-
 const states = [
     {
         greeting: 'Selamat Pagi',
@@ -18,7 +17,8 @@ const states = [
         duration: 10000,
         showSnow: true,
         showGurun: true,
-        showMatahari: true
+        showMatahari: true,
+        greetingColor: 'black'  // Default color
     },
     {
         greeting: 'Selamat Siang',
@@ -30,10 +30,11 @@ const states = [
         duration: 10000,
         showSnow: false,
         showGurun: true,
-        showMatahari: true
+        showMatahari: true,
+        greetingColor: 'black'  // Default color
     },
     {
-        greeting: 'Selamat malam',
+        greeting: 'Selamat Malam',
         carSrc: 'assets/car.png',
         backgroundColor: 'linear-gradient(to bottom, #000000, #FFFFFF)',
         carMessage: '',
@@ -42,7 +43,8 @@ const states = [
         duration: 15000,
         showSnow: false,
         showGurun: true,
-        showMatahari: false
+        showMatahari: false,
+        greetingColor: 'white'  // White color for better visibility
     }
 ];
 
@@ -50,14 +52,16 @@ let currentStateIndex = 0;
 
 function updateState() {
     const state = states[currentStateIndex];
+    console.log(`Switching to state: ${state.greeting}`);
+
     greeting.innerText = state.greeting;
-    greeting.style.color = state.greetingcolor;
+    greeting.style.color = state.greetingColor || 'black';  // Default to black if not defined
     carImage.src = state.carSrc;
     carMessage.innerText = state.carMessage;
     document.querySelector(".container").style.background = state.backgroundColor;
     gunung1Image.src = state.gunungSrc;
     gunung1Image.classList.remove('gunung2');
-    
+   
     if (state.gunungClass) {
         gunung1Image.classList.add(state.gunungClass);
     }
@@ -71,11 +75,9 @@ function updateState() {
     } else {
         snowflakes.style.display = 'none';
     }
-
     carEngineSound.play();
 
     currentStateIndex = (currentStateIndex + 1) % states.length;
-
     setTimeout(updateState, state.duration);
 }
 
