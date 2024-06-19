@@ -18,7 +18,7 @@ const states = [
         showSnow: true,
         showGurun: true,
         showMatahari: true,
-        greetingColor: 'black'  // Default color
+        greetingColor: 'black'
     },
     {
         greeting: 'Selamat Siang',
@@ -31,7 +31,7 @@ const states = [
         showSnow: false,
         showGurun: true,
         showMatahari: true,
-        greetingColor: 'black'  // Default color
+        greetingColor: 'black'  
     },
     {
         greeting: 'Selamat Malam',
@@ -44,7 +44,7 @@ const states = [
         showSnow: false,
         showGurun: true,
         showMatahari: false,
-        greetingColor: 'white'  // White color for better visibility
+        greetingColor: 'white' 
     }
 ];
 
@@ -55,7 +55,7 @@ function updateState() {
     console.log(`Switching to state: ${state.greeting}`);
 
     greeting.innerText = state.greeting;
-    greeting.style.color = state.greetingColor || 'black';  // Default to black if not defined
+    greeting.style.color = state.greetingColor || 'black'; 
     carImage.src = state.carSrc;
     carMessage.innerText = state.carMessage;
     document.querySelector(".container").style.background = state.backgroundColor;
